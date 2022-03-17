@@ -1,3 +1,8 @@
+## Run pre_process.ipynb to create dataset and center crop
+## Run train_and_sample.ipynb to train model and generate thumbnails
+## Run post_process.ipynb to get BART summaries and determine FID score of generated thumbnails
+
+
 # Thumbnail Generation
 
 Training and sampling script for generating thumbnails for the [**[2021 Visual News](https://github.com/FuxiaoLiu/VisualNews-Repository)** dataset](https://github.com/FuxiaoLiu/VisualNews-Repository).
@@ -50,7 +55,6 @@ python improved-diffusion/scripts/image_train.py --data_dir ./sample/ $MODEL_FLA
 ```bash
 pip install pytorch-fid 
 ```
-Check out the pre&post-process+FID.ipynb notebook
 
 ## Sampling
 Sample from the trained model:
